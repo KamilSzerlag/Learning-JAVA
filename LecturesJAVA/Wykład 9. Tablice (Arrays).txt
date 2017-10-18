@@ -1,0 +1,114 @@
+Wyk³ad 9. Tablice: 
+
+tablice tworzymy stosuj¹c konstrukcje: 
+
+sposób I: 
+
+(tablica typu int)
+int[] myIntArray = new int[10];
+		[tablica 10 elementowa]
+
+myIntArray[5]=50; // element 6 tablicy przyjmuje wartoœæ 50
+
+!! Pamiêtajmy,¿e odlicznie w javie rozpoczynamy od liczby 0,
+tzn. ¿e element 5 element bêdzie przypisany dla liczby 4.!!
+
+sposób II: 
+
+int[] myIntArray = {1,2,3,4,5,6,7,8,9,10}; 
+
+// w ten sposób definiujemy zarówno liczbê elementów, jak równie¿
+// wartoœci odpowiadaj¹ce im. 
+
+***
+
+przydatne przy tworzeniu tablic jest stosowanie pêtli.
+przyk³adowy kod:
+
+int[] myIntArray = new int [25];
+
+for(int i=0; i<myIntArray.length; i++) { // myIntArray.length jest to metoda z klasy Object //dostosowuj¹ca d³ugoœæ trwania pêtli do iloœci elementów zadeklarowanych w tablicy. 
+	myIntArray[i] = i*10; 
+}
+for(int i=0; i<myIntArray.length; i++) {
+	System.out.println("Element" + i + ", value is " + myIntArray);
+}
+
+*** 
+
+przekazywanie tablic do metody:
+
+int[] myIntArray = new int [25];
+
+for(int i=0; i<myIntArray.length; i++){
+	myIntArray[i] = i*10;
+}
+
+	printArray(myIntArray[]);
+}
+
+public static void printArray(int[] array) {
+	for(int i=0; i<array.length; i++) {
+	System.out.println("Element" + i + ", value is " + myIntArray);
+}
+}
+
+***
+zmienia rozmairu talbicy (resize method) : 
+
+private static void resizeArray()
+	{ int[] original = baseData;
+
+	  baseData = new int[12];
+	  for(int i= 0 ; i < original.length; i++)
+		baseData [i] = original[i]; 
+	}
+
+
+***
+Listy mo¿emy tworzyæ przy u¿yciu wbudowanej do jêzyka klasy "ArrayList".
+Przyk³ad implementacji: 
+
+public class GroceryList { 
+	private ArrayList<String> groceryList = new ArrayList<String>(); //TWORZENIE OBIEKTU "LISTA"
+			//typ jaki zapisujemy w liœcie
+	
+	pulbic void addGroceryItem(String item) { //DODAWANIE DO LISTY
+		groceryList.add(item); 
+			// add(item) - metoda dodaj¹ca element do listy
+	}
+	
+	public void printGroceryList() { // WYŒWIETLANIE
+		System.out.println("You have " + groceryList.size());
+					//size() - metoda pozwalaj¹ca nam przywo³aæ rozmiar 						listy
+		for(int i=0; i< groceryList.size(); i++ {
+			System.out.println((i+1)+ ". " + groceryList.get(i));
+	}
+	
+ 	public void modifyGroceryItem(int position, String newItem) {
+ //MODYFIKACJA DANEGO ELEMENTU LISTY
+		groceryList.set(position, newItem);
+        
+		System.out.println("Grocery item " + (position+1) + " has been modified.");
+    
+	}
+
+    
+	public void removeGroceryItem(int position) {
+ //USUWANIE        
+		String theItem = groceryList.get(position);
+        	
+		groceryList.remove(position);
+    }
+
+	public String
+ findItem(String searchItem) { //WYSZUKIWANIE ELEMENTUA NA LIŒCIE
+		//boolean exists = groceryList.contains(searchItem); //zwraca wartoœæ true, je¿eli element 									znajduje siê na liœcie i false je¿eli 										nie
+		int position = groceryList.indexOf(searchItem); // wyszukuje i zwraca index(pozycje) naszego 									elementu na liœcie(je¿eli element nie bêdzie 								siê znadowaæ zwaraca wartoœæ "null" 
+		if(position >= 0) {
+			return groceryList.get(position);
+
+		}
+		return null; 
+ 	}
+	

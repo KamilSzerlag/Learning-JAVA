@@ -1,0 +1,107 @@
+Wyk³ad 4. : 
+Klasy : 
+Klasê mo¿emy rozumieæ jako template (wzorzec) do stworzenia obiektu (object) cyt. "Class is a blueprint (pol. plan) to create object". Klasê mo¿emy traktowaæ jak swojego rodzaju "extra typ zmiennej", taki z super mocami!:) 
+
+!Zaleca siê aby przy tworzeni klas pierwsza litera by³a Wielk¹ liter¹. 
+np. public class Car {
+
+Instrukcja do tworzenia Klasy (class) ma postaæ:
+
+public class Main {...
+
+dwie cechy klasy to 
+-states - czyli zmienne (fields)
+example: 
+public class Car{
+private int doors;
+private int wheels; 
+private String model; 
+private String color; 
+}
+-behavior - czyli metody (methods) 
+example:
+
+**f w IntelliJ wskazuje nam, ¿e dana zmienna jest field'em 
+
+*
+Zasad¹ jest, i¿ je¿eli tworzymy member variables (zmienne "globalne") w Javie, nadajemy im modyfikator(dostêp) private.
+
+
+modyfikator dostêpu: 
+public - dostêpny dla ka¿dej klasy
+private
+
+*
+Object:
+Object tworzymy przy u¿yciu konstrukcji:
+example:
+Car porsche = new Car(); // new keyword s³u¿y do inicjalizacji klasy // [new Car()] - 					    ma na celu stworzenie obiektu klasy "Car" i nazywamy to konstruktorem
+
+porsche.model = "Carrera"; 
+
+*
+w klasach u¿ywamy setter'ów i getter'ów: 
+setter jest to metoda np. postaci:
+public void setModel(String model){
+	this.model = model;
+}
+
+getter jest to metoda np. postaci:
+public String getModel(){
+	return this.model; 
+}
+
+*
+
+keyword "this" pozwala nam nadaæ wartoœæ odpowiedniej zmiennej
+np. 
+this.model = model;
+
+*
+Aby uaktualniæ (nadaæ wartoœæ) zmiennej w danej klasie u¿ywamy do tego argumentu w metodzie, aby zachowaæ zasady kapsu³kowoœci (hermetyzacji) w Javie.
+
+* 
+domyœlnym (default'ow¹) wartoœci¹ dla klasy jest "null"
+
+*
+u¿ywaj¹æ setterów i getterów mo¿emy dokonaæ ³atwej walidacji np.
+mo¿emy sprawiæ, aby parametr model by³ sprawdza³ czy jest to Carrera, nie zale¿nie od tego jakiej wielkoœci liter u¿yjemy w Stringu. Dla przyk³adu:
+
+public void setModel(String model){
+	this.model = model; 
+	String validmodel = model.toLowerCase();
+	if(validmodel.equals("carrera") {
+		this.model = model;
+	}
+	else this.model = "Unknown" ;
+}
+
+[SKRÓT] alt + ins - generate getters and setters 	
+
+*
+
+constructor: 
+Bankaccount account = new [Bankaccount()]
+
+konstruktor jest to specjalny typ metody, która jest wywo³ywana w momenci tworzenia obiektu 
+*
+!Nie zaleca siê tworzenia metod (ani setterów) w konstruktorach!
+
+*
+konstruktor w klasie ma postaæ:
+
+public Bankaccount(String namecustomer, double balance){
+this.namecustomer = namecustomer;//  w ten sposób bez u¿ycia setterów mo¿emy odwo³ywaæ siê 
+this.balance = balance ;  // do zmiennych field
+
+[przeci¹¿enie metody (konstruktora)]:
+
+public Bankaccount (double balance){
+this("Tim", balance); // unikamy w ten sposób dublowania konstruktora 
+}
+
+
+Bankaccount vip = new Bankaccount("Tim", 1000");// wywo³anie konstruktora w metodzie main ;
+
+
+

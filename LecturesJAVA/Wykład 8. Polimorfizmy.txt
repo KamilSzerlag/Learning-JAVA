@@ -1,0 +1,14 @@
+Wyk³ad 8. Polimorfizmy : 
+
+rozumienie polimorfizmu przedstawione przez naukajavy.pl :
+"Korzyœci jakie mo¿emy osi¹gn¹æ z tytu³u dziedziczenia by³yby bardzo ograniczone, gdyby nie polimorfizm. Polimorfizm oznacza mo¿liwoœæ traktowania obiektów ró¿nych podtypów pewnego wspólnego typu w taki sam sposób. Za chwilkê przekonamy siê, co to oznacza i jak bardzo potrafi u³atwiæ programowanie.
+
+Wróæmy na chwilê do przyk³adu z artyku³u dotycz¹cego dziedziczenia. Skoro ksi¹¿ka jest produktem – w jêzyku Java oznacza to, ¿e klasa Book dziedziczy z klasy Product – to przecie¿ mo¿emy potraktowaæ ksi¹¿kê jak produkt. Skoro mo¿emy ksi¹¿kê potraktowaæ jak produkt, to mo¿emy obiekt reprezentuj¹cy konkretn¹ ksi¹¿kê, a wiêc obiekt typu Book, przypisaæ do referencji typu Product. Mo¿emy wiêc napisaæ:
+
+Product myProd = new Book(39.90, 210);
+Oczywiœcie w naszym sklepie bêdziemy sprzedawali te¿ inne artyku³y, nie tylko ksi¹¿ki. Bêdziemy wiêc mieli tak¿e klasy takie jak MusicCD, GameCD i AppCD opisuj¹ce kolejno p³yty CD czy DVD z muzyk¹, grami i aplikacjami. Wszystkie one bêd¹ dziedziczy³y z klasy Product i wszystkie one mog¹ byæ przetwarzane w systemie tak jak produkty. Mo¿emy wiêc napisaæ:
+
+Product myProd = new MusicCD(19.90, "The Beatles", "A Hard Day's Night");
+i potem:
+
+myProd.getPrice(); " 

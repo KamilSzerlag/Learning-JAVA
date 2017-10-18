@@ -1,0 +1,29 @@
+Wyk³ad 10. Autoboxing & Unboxing
+
+Warto zauwa¿yæ, i¿ tworzenie listy typu ArrayList, mo¿e odbywaæ siê tylko i wy³¹cznie, dla typów bêd¹cych jednoczeœnie klasami.Nie mo¿na utworzyæ listy ArrayList, dla typów prymitywnych np. integer. 
+
+w Javie rozró¿niamy typy "int" oraz, typ "Integer". 
+G³ówn¹ ró¿nic¹ miêdzy tymi typami jest to, ¿e typ "int" jest typem prymitywnym, zaœ typ "Integer" jest
+klas¹. Ró¿nica ta pozwala nam na utworzenie listy (ArrayList) zawieraj¹ce obiekty typu "Integer".
+
+Aby utworzyæ listê typu "Integer" musimy dokonaæ autoboxingu typu.
+dokonujemy tego w nastêpuj¹cy sposób. 
+
+Przyk³adowy kod: 
+ArrayList<Integer> int ArrayList =  new ArrayList<Integer>(); 
+//autoboxing 
+for(int i=0; i<=10; i++)
+{	intArrayList.add(Integer.valueOf(i)); //tutaj dokonujemy parsowania na typu int na typ Integer?
+}
+//unboxing
+for(int i=0; i<=10; i++)
+{	System.out.println( i + " --> " + intArrayList.get(i).intValue()); 
+}
+
+Java posiada zaimplementowan¹ umiejêtnoœæ tworzenia obiektów typu Integer o wartoœci typu int bez u¿ywania konstruktorów. np:
+
+Integer myIntValue = 50; // w³aœciwie Java u¿ywa Integer.valueOf(50); 
+
+ i odwrotnie
+
+int myInt = myInt.intValue(); // w³aœciwe myIntValue.intValue();

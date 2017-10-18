@@ -1,0 +1,127 @@
+Wyk³ad 2: 
+https://en.wikipedia.org/wiki/List_of_Java_keywords
+lista keywarods, s³ow kluczy w java 
+! s¹ one zarezerwowane dla javy, nie mo¿emy ich u¿ywaæ w stringach! 
+
+*
+instrukcja if: 
+!je¿eli if(wartoœæ), wartoœæ nie jest zdefiniowana, java uznaje, ¿e jest to true!
+
+*
+Wyra¿enia(expression) :
+np.
+score = 800
+Pies = 200
+
+Instrukcje(Statements);
+s¹ to ca³e linijki kodu:
+int score = 800; 
+
+*
+Metody: 
+Pomagaj¹ zapobiegaæ duplikowaniu kodu.
+W jêzykach obiektowych staramy siê unikaæ duplikacji kodu, gdy¿ zwiêksza to prawdopodobieñstwo pope³nienia b³êdu oraz zmniejsza czytelnoœæ kodu 
+
+przyk³ad zastosowania:
+kod 
+
+calculateScore() - spowoduje wykonanie metody calculateScore() - czyli nie jako kodu zawartego w tej metodzie, co powoduje i¿ nie musimy go duplikowaæ
+
+Metoda void - jest to metoda, która nie zwraca ¿adnej wartoœci. s³u¿y jedynie wykonaniu kodu
+Je¿eli chcemy zwróciæ wartoœæ,  stosujemy typ zgodny z wymagan¹ wartoœci¹
+
+
+metoda:  public static void calculateScore ()
+
+WA¯NE:
+public static void calculateScore ([parametry]) - parametry mówi¹ nam jakie zmienne maj¹ miêæ okreœlone wartoœci. 
+calculateScore([argumenty]) - wartoœci jakie przypiszemy argumentom 
+
+WA¯NE: 
+W parametrach równie¿ mo¿emy definiowaæ zmienne 
+
+DOBRE SKORZYSTANIE Z METODY:
+
+public static void main(String[] args) {
+        calculateScore(true, 200, 15, 3);
+
+        calculateScore(true, 15, 2, 1);
+
+
+    }
+
+    public static int calculateScore(boolean gameOver,int score, int levelCompleted, int bonus) {
+
+        if(gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            finalScore += 2000;
+            System.out.println("Your final score was " + finalScore);
+            return finalScore;
+        }
+
+        return -1;
+Æwiczeni i przyk³ad u¿ycia metody: 
+    }
+public class Main {
+
+    public static void main(String[] args) {
+
+        int highscoretable = calculateHighScorePosition(1500);//argumenty
+        displayHighScorePosition("kamil", highscoretable);//argumenty
+        highscoretable = calculateHighScorePosition(900);//argumenty
+        displayHighScorePosition("mateusz",highscoretable);//argumenty
+        highscoretable = calculateHighScorePosition(400);//argumenty
+        displayHighScorePosition("pawel",highscoretable);//argumenty
+
+
+    }
+
+    public static void displayHighScorePosition(String playername, int highscoretable)//parametry {
+        System.out.println("Player on place " + highscoretable +" is "  + playername);
+    }
+
+    public static int calculateHighScorePosition(int playerscore)//parametry {
+        {
+            if (playerscore > 1000)
+                return 1;
+            else if (playerscore > 500 && playerscore < 1000)
+                return 2;
+            else
+                return 3;
+        }
+
+    }
+}
+*
+Prze³adowanie metody (overloading methods): 
+jest to u¿ycie tej samej metody, ale z innymi parametrami
+przyk³ad zastosowania prze³adowanej metody: 
+public class Main {
+
+    public static void main(String[] args) {
+        calcFeetAndInchestoCentimeters(15, 0);
+        calcFeetAndInchestoCentimeters(15);
+        // write your code here
+    }
+
+    public static double calcFeetAndInchestoCentimeters(double Feet, double Inches) {//dwa parametry
+        if (Feet >= 0 || (Inches >= 0 && Inches <= 12)) {
+            double FeettoCentimeters = Feet * 30.48 + Inches * 2.54;
+            System.out.println("Feet to Centimeters is " + FeettoCentimeters);
+            return FeettoCentimeters;
+
+
+        } else return -1;
+    }
+
+    public static double calcFeetAndInchestoCentimeters(double Inches) {//jeden parametr
+        if (Inches >= 0) {
+            double FeetinInches = (Inches * 2.54) / 30.48;
+            System.out.println("Feet in Iches is " + FeetinInches);
+            return FeetinInches;
+
+
+        } else return -1;
+    }
+}
+*

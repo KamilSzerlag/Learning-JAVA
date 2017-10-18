@@ -1,0 +1,88 @@
+Wyk³ad 3:
+
+Instrukcja switch :
+konstrukcja wygl¹da nastêpuj¹co
+
+switch(switchValue) {
+	case 1:
+		System.out.println;
+		break; }  // 
+s³owo klucz break odpowiada za przerwanie po wykonaniu danego przypadku instrukcji switch 
+	default: 
+		System.out.println()
+		break; 
+
+je¿eli nie zosta³ wybrany ¿aden z "case'ów" zostanie wykonana istrukcja "default" 
+
+!Za pomoc¹ instrukcji if, mo¿emy czêsto wykonaæ to samo polecenie, które zostalo wykonane przy pomocy instrukcji switch. Instrukcja switch jest stosowana w przypadku gdy testujemy ca³y czas t¹ sam¹ zmienn¹.!  
+
+Czasami mo¿emy mieæ potrzebê zastosowania skrótu, np. gdy 
+instrukcja zawarta w case 4 jest taka sama jak w case 5 i case 6:
+Wtedy mozemy zastosowaæ konstrukcjê:
+	case 4:case 5:case 6:
+		System.out.println("cokolwiek")
+		System.out.println("W³asciwe to" + switchValue") // ukazuje, który case zosta³ wybrany
+		break; 
+!Nale¿y pamiêtaæ o wyra¿eniu "break", gdy¿ bez nniego po zakoñczeniu wybranego przypadku  otrzymamy nieprzewidywalny rezultat(najprawdopodobniej kompilator przejdzie do nastêpnego przypadku, nastêpnej linijki).Jest to bardzo czêsto pope³niany b³¹d przy stosowaniu instrukcji "switch"!
+Przyk³ad zastosowania instrukcji switch: 
+public class Main {
+
+    public static void main(String[] args) {
+        switchmetod('a');
+        switchmetod('b');
+        switchmetod('c');
+        switchmetod('d');
+        switchmetod('e');
+    }
+
+
+
+
+    public static void switchmetod(char zmienna) {
+        switch (zmienna) {
+            case 'a':case 'b':case 'c':case 'd':
+                System.out.println("Wybrana zmienna to" + zmienna);
+                break;
+
+
+            default:
+                System.out.println("bledna zmienna, wybrales"+zmienna+"wybierz a, b, c lub d");
+                break;
+        }
+
+    }
+}
+
+!!pamiêtajmy, ¿e znak char umieszczamy w 'x' !!
+**Od Javy w wersji 7 mo¿emy u¿ywaæ instrukcji switch, równie¿ ze "String'ami" 
+*
+!!!pamiêtajmy, ¿e Java rozró¿nia wielkoœæ znaków, wiêc aby nie powodowaæ b³êdów postaci np. jaNuary, zamiast January mo¿emy skorzystaæ z metody przypisanej do klasy "string"(omówienie w dalszej czêœci) 
+month.toLowerCase() // month jest zmienn¹ 
+metoda ta konwertuje znaki do ma³ych liter 
+
+*
+
+Pêtla for:
+konstrukcja for(inicjalizacja zmiennej; warunek logiczny; inkrementacja)
+
+**aby poprawiæ w kodzie sposób wyœwietlania liczb, np. podczas u¿ywania typu "double"
+mo¿eym u¿yæ metody zawartej w klasie "String":
+String.format("%.2f",liczba) - wyœwietla tylko dwa miejsca po przecinku 
+
+*
+i <= n / 2 mo¿emy zoptymalizowaæ przy u¿yciu : i <=(long) Math.sqrt(n) , zmniejsza to iloœæ pêtli, przyœpieszaj¹c procesowanie. :) 
+
+*
+Pêtla while: 
+konstrukcja while(warunek logiczny) 
+		instrukcja; 
+!Je¿eli warunek logiczny nie jest spe³niony, instrukcja nie zostanie wykonana ani razu!
+*
+Pêtla do ..  while
+kunstrukcja do{
+		instrukcja;
+		}while(warunek logiczny); 
+!Instrukcja zostanie wykonana conajmniej raz! 
+
+
+

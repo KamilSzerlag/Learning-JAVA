@@ -1,0 +1,49 @@
+Kompozycjê stosuje siê wtedy, gdy miêdzy klasami zachodzi relacja typu
+ „ca³oœæ - czêœæ” tzn. nowa klasa zawiera w sobie istniej¹c¹ klasê. 
+
+Kompozycjê uzyskujemy poprzez definiowanie w nowej klasie pól, które s¹ obiektami
+istniej¹cych klas. 
+
+kompozycje mozemy wywo³ywaæ na dwa sposoby:
+
+- u¿ywaj¹c getterów :
+	Main:
+
+theRoom.getFurniture().sexinBed("jakaœ cycata blondyneczka");
+	
+	Room:
+
+public Furniture getFurniture() {
+        return furniture;
+    }
+	
+	Furniture:
+
+public void sexinBed(String blonde) {
+
+        System.out.println("Ruchasz w³asnie cycata blondyneczke" + blonde);
+    }
+
+-nie u¿ywaj¹c getterów (sposób prostyszy, bardziej przejrzysty, czêœciej stosowany):
+
+	Main:
+
+theRoom.wpuscAbyPoruchac();
+
+	Room:
+	
+public void wpuscAbyPoruchac(){
+        System.out.println("Zaprosiles wlasnie do siebie cycata blondyneczke");
+        furniture.sexinBed("jeszcze bardziej cycata blondyneczka");
+
+	Furniture:
+
+public void sexinBed(String blonde) {
+
+        System.out.println("Ruchasz w³asnie cycata blondyneczke" + blonde);
+    }
+
+
+
+	
+
