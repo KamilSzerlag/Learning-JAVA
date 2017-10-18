@@ -1,2 +1,5 @@
 # Learning-JAVA
-This repository contains a simple apps which I created during learning JAVA
+Hi! 
+My name is Kamil and I have been learning Java for about 4 months.
+I'm undergraduated student of Aviation and brand new student of Computer Science. ;) 
+Let's begin fun time with Github(miau!) 
