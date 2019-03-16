@@ -27,8 +27,8 @@ W celu połączenia się z bazą danych używamy DriverManager'a:
 }
 
 Zaleca się aby pisać blok 'try' w nowym stylu, gdyż wtedy zasoby automatycznie zostają zamknięte po wykonaniu bloku: 
-
-``` try (Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\szerlag\\Desktop\\Programowanie\\Projekty\\INTELIJ\\JDBClearn\\testJDBC.db");
+```
+try (Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\szerlag\\Desktop\\Programowanie\\Projekty\\INTELIJ\\JDBClearn\\testJDBC.db");
              Statement statement = conn.createStatement()) {
             statement.execute("CREATE TABLE kontakty (imie text, nazwisko text, wiek integer)"); {  statement.execute("CREATE TABLE kontakty (imie text, nazwisko text, wiek integer)");}
 catch(SQLException e) {} 
