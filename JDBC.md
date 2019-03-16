@@ -92,7 +92,7 @@ updateSales.setString(2, e.getKey());
 5. Przetważamy resultaty w sposób ten sam jak korzystając z wyrażenia Statement
 
 ****************WAŻNE********************
-TRANSACTIONS (TRANZAKCJE):
+TRANSACTIONS (TRANSAKCJE):
 Tranzakcje to sekwencja poleceń SQL które są traktowane jako pojedyńcza jednostka. Jeżeli któreś z poleceń nie zostanie wykonane, poprzednie polecena zostaną cofnięte, będź teź niezapisane. Tak jakby to się nigdy nie wydarzyło. ;) 
 
 Jeżeli mówimy o bazach danych to zazwyczaj używamy słowa "commit" niż "save/zapisać", odnosząc się do permanentnych zmian. 
@@ -106,15 +106,15 @@ https://pl.wikipedia.org/wiki/ACID -> Link do Wiki
 3. Isolation(izolacja) - Dopóki nie zostaną dokonane zmiany (zacommitowane), nie są widoczne dla innych połączeń. Tranzakcje nie mogą być zależne od siebie. 
 4. Durability(trwałość) - Zmiany dokonane przez tranzakcje są permanentne. Jeżeli serwer pada zmiany dokonane przez tranzakcje sa wciąż w bazie danych po ponownym ich uruchomieniu. 
 
-Korzystamy z tranzakcji tylko w przypadku dokonywania zmian w bazie danych. 
-Jeżeli nie dokonujemy zmian nie potrzebujemy korzystać z tranzakcji. 
-Za każdym razem gdy korzystamy z poleceń UPDATE, INSERT, DELETE powinna być dokonywana tranzakcja.
+Korzystamy z transakcji tylko w przypadku dokonywania zmian w bazie danych. 
+Jeżeli nie dokonujemy zmian nie potrzebujemy korzystać z transakcji. 
+Za każdym razem gdy korzystamy z poleceń UPDATE, INSERT, DELETE powinna być dokonywana transakcja.
 
-Pracując z sqlite następujące komendy służą do obsługiwania tranzakcji: 
-1. BEGIN TRANSACTION - ręcznie rozpoczynamy tranzakcję
-2. END TRANSACTION - ręcznie końćzymy tranzakcje. Commit zmian automatycznie kończy tranzakcję, z kolei END TRANSACTION powoduje Commit. Można uznać, że END TRANSACTION = COMMIT 
-3. COMMIT Powoduje zapisanie zmian utworzonych przez tranzakcję
-4. ROLLBACK - powoduje cofniecie nie zacommitowanych zmian i konczy tranzakcję. Należy zauważyć iż możemy cofnąc tylko zmiany mające miejsce od ostaniego COMMITu bądź ROLLBACKu. 
+Pracując z sqlite następujące komendy służą do obsługiwania transakcji: 
+1. BEGIN TRANSACTION - ręcznie rozpoczynamy transakcję
+2. END TRANSACTION - ręcznie końćzymy transakcje. Commit zmian automatycznie kończy tranzakcję, z kolei END TRANSACTION powoduje Commit. Można uznać, że END TRANSACTION = COMMIT 
+3. COMMIT Powoduje zapisanie zmian utworzonych przez transakcję
+4. ROLLBACK - powoduje cofniecie nie zacommitowanych zmian i konczy transakcję. Należy zauważyć iż możemy cofnąc tylko zmiany mające miejsce od ostaniego COMMITu bądź ROLLBACKu. 
 
 Zamykając połączenie przed dokonaniem commitu, zmiany zostają cofnięte.
 
@@ -122,7 +122,7 @@ Zamykając połączenie przed dokonaniem commitu, zmiany zostają cofnięte.
 
 Aby dokonać tranzakcji przy pomocy JDBC musimy podążać z następującymi krokami: 
 1. Wyłączamy default-owo ustawiony auto-commit-> Connection.setAutoCommit(false);
-2. Uruchamiamy operacje SQL tworzące naszą tranzakcję
+2. Uruchamiamy operacje SQL tworzące naszą transakcję
 3. Jeżeli nie ma błędów wywołujemy Connection.commit();, jeżeli są błędy wywołujemy Connection.rollback();
 4. Przywracamy defaultową wartośc auto-commit->  Connection.setAutoCommit(true); 
 
