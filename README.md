@@ -8,3 +8,6 @@ JAVA BRAINS https://www.youtube.com/user/koushks
 
 ## SPRING
 soon...
+
+## Others...
+https://12factor.net/pl/ [PL]
