@@ -7,9 +7,9 @@ Good step by step Java course  http://moocfi.github.io/courses/2013/programming-
 JAVA BRAINS https://www.youtube.com/user/koushks
 
 ## SPRING
-###Blogi o Spring Boot warte uwagi:
-http://bykowski.pl
-http://blog.mloza.pl/
+### Blogi o Spring Boot warte uwagi:
+Przemysław Bykowski http://bykowski.pl
+Yet another technical blog http://blog.mloza.pl/
 
 ## Others...
 https://12factor.net/pl/ Metodologia dwunastu aspektów, czyli jak wytwarzać nowoczesne, łatwe w utrzymaniu oprogramowanie typu <i>SaaS software-as-a-service</i> [PL]
