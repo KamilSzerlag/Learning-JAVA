@@ -8,7 +8,7 @@ JAVA BRAINS https://www.youtube.com/user/koushks
 
 ## SPRING
 ### Blogi o Spring Boot warte uwagi:
-Przemysław Bykowski http://bykowski.pl
+Przemysław Bykowski http://bykowski.pl </br>
 Yet another technical blog http://blog.mloza.pl/
 
 ## Others...
