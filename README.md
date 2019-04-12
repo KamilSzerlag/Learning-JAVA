@@ -11,7 +11,7 @@ JAVA BRAINS https://www.youtube.com/user/koushks
 Przemysław Bykowski http://bykowski.pl </br>
 Yet another technical blog http://blog.mloza.pl/
 ### Spring Data JPA
-JPA basics, Really helping when you make your first steps with JPA:
+JPA basics, Really helping when you make your first steps with JPA:</b
 https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html</br>
 https://docs.oracle.com/javaee/7/tutorial/partpersist.htm#BNBPY</br>
 next step should be actual <b>Spring Data JPA reference</b> 
