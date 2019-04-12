@@ -14,6 +14,6 @@ Yet another technical blog http://blog.mloza.pl/
 JPA basics, Really helping when you make your first steps with JPA:
 https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html</br>
 https://docs.oracle.com/javaee/7/tutorial/partpersist.htm#BNBPY</br>
-<b>next step</b> should be actuall Spring Data JPA reference 
+next step should be actuall <b>Spring Data JPA reference</b> 
 ## Others...
 https://12factor.net/pl/ Metodologia dwunastu aspektów, czyli jak wytwarzać nowoczesne, łatwe w utrzymaniu oprogramowanie typu <i>SaaS software-as-a-service</i> [PL]
