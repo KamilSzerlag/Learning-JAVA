@@ -10,6 +10,7 @@ JAVA BRAINS https://www.youtube.com/user/koushks
 ### Blogi o Spring Boot warte uwagi:
 Przemysław Bykowski http://bykowski.pl </br>
 Yet another technical blog http://blog.mloza.pl/
-
+### Spring Data JPA
+https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html JPA basics, Really helping when you trying makes your first steps with JPA 
 ## Others...
 https://12factor.net/pl/ Metodologia dwunastu aspektów, czyli jak wytwarzać nowoczesne, łatwe w utrzymaniu oprogramowanie typu <i>SaaS software-as-a-service</i> [PL]
