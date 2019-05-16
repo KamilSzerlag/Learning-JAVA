@@ -5,6 +5,7 @@ Tim Buchalka, best video course I ever found https://www.udemy.com/share/1000wYA
 Samouczek Programisty http://www.samouczekprogramisty.pl/kurs-programowania-java/ [PL] </br>
 Good step by step Java course  http://moocfi.github.io/courses/2013/programming-part-1/ [ENG]</br>
 JAVA BRAINS https://www.youtube.com/user/koushks </br>
+Good practises and designs in JAVA http://www.javapractices.com/home/HomeAction.do </br>
 ### JAVA SE 8 
 JUG Optionals, Lambdas, Streams. Good examples,how to use properly https://youtu.be/bjaNWBKQroA </br>
 
