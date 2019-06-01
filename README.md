@@ -20,4 +20,5 @@ https://docs.oracle.com/javaee/7/tutorial/partpersist.htm#BNBPY</br>
 next step should be actual <b>Spring Data JPA reference</b></br>
 Jakub Kubryński JPA - beyond copy-paste https://www.youtube.com/watch?v=UPWkpl5PL_w</br> 
 ## Others...
-https://12factor.net/pl/ Metodologia dwunastu aspektów, czyli jak wytwarzać nowoczesne, łatwe w utrzymaniu oprogramowanie typu <i>SaaS software-as-a-service</i> [PL]
+https://12factor.net/pl/ Metodologia dwunastu aspektów, czyli jak wytwarzać nowoczesne, łatwe w utrzymaniu oprogramowanie typu <i>SaaS software-as-a-service</i> [PL] </br>
+REST - know the rules https://www.youtube.com/watch?v=lGLGW7EOzVY </br>
