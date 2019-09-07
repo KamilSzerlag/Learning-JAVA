@@ -27,4 +27,4 @@ REST - know the rules https://www.youtube.com/watch?v=lGLGW7EOzVY </br>
 https://github.com/akullpp/awesome-java </br>
 https://github.com/Vedenin/useful-java-links </br>
 https://github.com/java-lang/awesome-java </br>
-<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+<img src="java-developer-roadmap.png" alt="roadmap" style="width:30%;height:30%;">
