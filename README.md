@@ -23,8 +23,9 @@ Jakub Kubryński JPA - beyond copy-paste https://www.youtube.com/watch?v=UPWkpl5
 https://12factor.net/pl/ Metodologia dwunastu aspektów, czyli jak wytwarzać nowoczesne, łatwe w utrzymaniu oprogramowanie typu <i>SaaS software-as-a-service</i> [PL] </br>
 REST - know the rules https://www.youtube.com/watch?v=lGLGW7EOzVY </br>
 
-## Take a look on your road to be professional
+## ON YOUR ROAD TO BE A BETTER PROFESSIONAL
 https://github.com/akullpp/awesome-java </br>
 https://github.com/Vedenin/useful-java-links </br>
 https://github.com/java-lang/awesome-java </br>
+https://github.com/s4kibs4mi/java-developer-roadmap </br>
 <img src="java-developer-roadmap.png" alt="roadmap" style="width:30%;height:30%;">
