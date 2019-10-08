@@ -29,3 +29,9 @@ https://github.com/Vedenin/useful-java-links </br>
 https://github.com/java-lang/awesome-java </br>
 https://github.com/s4kibs4mi/java-developer-roadmap </br>
 <img src="java-developer-roadmap.png" alt="roadmap" style="width:30%;height:30%;">
+
+## STYLE GUIDES
+Java was created for writing best looking code </br>
+https://google.github.io/styleguide/javaguide.html </br>
+https://github.com/twitter/commons/blob/master/src/java/com/twitter/common/styleguide.md </br>
+https://petroware.no/javastyle.html </br>
