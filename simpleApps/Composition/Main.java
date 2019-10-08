@@ -7,7 +7,7 @@ public class Main {
         Room theRoom = new Room("dark", "glassy", "dywan", theFurniture);
 
 
-        theRoom.getFurniture().sexinBed("jakaś cycata blondyneczka");
+        theRoom.getFurniture().hoveringTheCarpet("wziuuu!");
         theRoom.wpuscAbyPoruchac();
 
     }
