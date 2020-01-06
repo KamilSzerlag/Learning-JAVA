@@ -32,6 +32,7 @@ https://github.com/s4kibs4mi/java-developer-roadmap </br>
 
 ## STYLE GUIDES
 and remember <b>Java was created for writing best looking code</b>! </br>
+https://alibaba.github.io/Alibaba-Java-Coding-Guidelines/ <b>If You are at the begining of your journey, I'm pretty sure that u should read this at least two times</b><br>
 https://google.github.io/styleguide/javaguide.html </br>
 https://github.com/twitter/commons/blob/master/src/java/com/twitter/common/styleguide.md </br>
 https://petroware.no/javastyle.html </br>
