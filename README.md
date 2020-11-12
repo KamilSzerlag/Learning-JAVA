@@ -1,4 +1,4 @@
-# Learning-JAVA
+# learning-Java
 ## JAVA
 Links to courses, which could help begin your journey with JAVA. 
 Tim Buchalka, best video course I ever found https://www.udemy.com/share/1000wYAkcbdVlbQ3w=/ [ENG] </br>
