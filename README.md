@@ -19,6 +19,7 @@ https://docs.oracle.com/javaee/5/tutorial/doc/bnbqa.html</br>
 https://docs.oracle.com/javaee/7/tutorial/partpersist.htm#BNBPY</br>
 next step should be actual <b>Spring Data JPA reference</b></br>
 Jakub Kubryński JPA - beyond copy-paste https://www.youtube.com/watch?v=UPWkpl5PL_w</br> 
+Jens Schauder Spring Data JPA https://youtu.be/Zyqpo8gxSO0 Jens Explained some misunderstanding during working with Spring Data JPA </br>
 ## Others...
 https://12factor.net/pl/ Metodologia dwunastu aspektów, czyli jak wytwarzać nowoczesne, łatwe w utrzymaniu oprogramowanie typu <i>SaaS software-as-a-service</i> [PL] </br>
 REST - know the rules https://www.youtube.com/watch?v=lGLGW7EOzVY </br>
